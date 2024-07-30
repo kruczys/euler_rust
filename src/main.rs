@@ -1,5 +1,5 @@
-use euler_rust::problem_1::solve_1::solve_1;
+use euler_rust::problem_2::solve_2::solve_2;
 
 fn main() {
-    println!("Problem 1 result {}", solve_1(1000));
+    println!("Problem 2 result {}", solve_2());
 }
