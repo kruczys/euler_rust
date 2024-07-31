@@ -1,5 +1,5 @@
-use euler_rust::problem_3::solve_3::solve_3;
+use euler_rust::problem_4::solve_4::solve_4;
 
 fn main() {
-    println!("Problem 3 result {:?}", solve_3(600851475143));
+    println!("Problem 4 result {:?}", solve_4());
 }
