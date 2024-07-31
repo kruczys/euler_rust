@@ -17,8 +17,21 @@ fn is_prime(n: u64) -> bool {
     }
 }
 
-fn find_prime_factors(n: u64) -> Vec<u64> {
-    let mut factors = Vec::new();
+fn find_prime_factors(n: u64) -> u64 {
     let max = n.sqrt();
-    factors
+    for i in (2..max).rev() {
+        match n % i == 0 {
+            true => {
+                if is_prime(i) {
+                    return i;
+                }
+            }
+            false => continue,
+        }
+    }
+    0
+}
+
+pub fn solve_3(n: u64) -> u64 {
+    find_prime_factors(n)
 }
